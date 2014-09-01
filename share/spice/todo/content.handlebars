@@ -1,0 +1,14 @@
+{{#if flash}}
+  {{{flash}}}<br/>
+{{/if}}
+
+{{#if has_elements}}
+  {{#each todo}}
+    {{this.[0]}}
+    -
+    {{this.[1]}}
+    <br/>
+  {{/each}}
+{{else}}
+  <p>No items.</p>
+{{/if}}
